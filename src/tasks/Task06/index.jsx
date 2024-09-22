@@ -12,7 +12,7 @@ function Task06() {
       <h4 className={styles.tituloQuartoNivel}>Conceitos de Usabilidade</h4>
       <p className={styles.paragrafo}>
         <strong>Usabilidade</strong> refere-se à facilidade de uso de uma
-        interface ou sistema pelo usuário. É um conceito importante no
+        interface ou sistema pelo usuário. É um conceito importante no{' '}
         <em>design</em> de interfaces, pois afeta diretamente a experiência do
         usuário.
       </p>
