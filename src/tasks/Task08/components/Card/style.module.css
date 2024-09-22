@@ -1,0 +1,41 @@
+.conteiner {
+  width: 95%;
+  max-width: 600px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white-smoke);
+  box-shadow: 5px 6px 8px 1px var(--light-grey);
+}
+
+.imagem {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.informacoes {
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titulo {
+  text-align: left;
+}
+
+.descricao,
+.rodape {
+  font-size: 1rem;
+}
+
+.rodape {
+  text-align: left;
+}
+
+@media (min-width: 425px) {
+  .descricao,
+  .rodape {
+    font-size: 1.1rem;
+  }
+}
