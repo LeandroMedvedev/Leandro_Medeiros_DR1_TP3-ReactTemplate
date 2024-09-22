@@ -1,0 +1,23 @@
+.conteiner {
+  max-width: 900px;
+  margin-inline: auto;
+}
+
+.tituloSegundoNivel {
+  font-size: clamp(1.5rem, 2.5vw, 2.5rem);
+}
+
+.tituloTerceiroNivel {
+  font-size: clamp(1.25rem, 2vw, 2rem);
+}
+
+.tituloQuartoNivel {
+  font-size: clamp(1.15rem, 1.5vw, 1.75rem);
+  margin-bottom: 40px;
+}
+
+.paragrafo {
+  font-size: clamp(1rem, 1.2vw, 1.25rem);
+  text-indent: 20px;
+  padding: 0 20px;
+}
