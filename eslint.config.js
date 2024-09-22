@@ -1,19 +1,40 @@
-import globals from 'globals';
-import pluginJs from '@eslint/js';
-import pluginReact from 'eslint-plugin-react';
+import eslintPluginReact from 'eslint-plugin-react';
+import eslintPluginPrettier from 'eslint-plugin-prettier';
 
 export default [
-  { files: ['**/*.{js,mjs,cjs,jsx}'] },
-  { languageOptions: { globals: globals.browser } },
-  pluginJs.configs.recommended,
-  pluginReact.configs.flat.recommended,
   {
+    files: ['*.js', '*.jsx'],
+    languageOptions: {
+      ecmaVersion: 2021,
+      sourceType: 'module',
+      globals: {
+        browser: true,
+      },
+      parserOptions: {
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
     plugins: {
-      prettier,
+      react: eslintPluginReact,
+      prettier: eslintPluginPrettier,
     },
     rules: {
-      'prettier/prettier': 'error',
+      'prettier/prettier': [
+        'error',
+        {
+          singleQuote: true,
+        },
+      ],
+      'react/react-in-jsx-scope': 'off',
+      'no-unused-vars': 'warn', // Exemplo de uma regra ESLint padrão
     },
+    settings: {
+      react: {
+        version: 'detect',
+      },
+    },
+    ignores: ['node_modules'],
   },
-  configPrettier,
 ];
