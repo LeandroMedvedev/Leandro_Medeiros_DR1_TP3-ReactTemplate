@@ -3,7 +3,7 @@ import fotoPerfil from '../../../../assets/photos/me.jpg';
 
 function Usuario() {
   return (
-    <div className={styles.conteiner}>
+    <div id="profile" className={styles.conteiner}>
       <section className={styles.identificacao}>
         <img
           className={styles.fotoPerfil}

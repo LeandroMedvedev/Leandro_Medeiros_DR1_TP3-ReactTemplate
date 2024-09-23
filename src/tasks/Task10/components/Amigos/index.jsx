@@ -4,7 +4,7 @@ import { AMIGOS } from '../../../../constants';
 
 function Amigos() {
   return (
-    <section className={styles.conteiner}>
+    <section id="friends" className={styles.conteiner}>
       <h2>Amigos</h2>
       {AMIGOS.map((amigo, index) => (
         <AmigoItem

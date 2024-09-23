@@ -13,9 +13,6 @@ function Header() {
       <nav>
         <ul className={styles.list}>
           <li className={styles.listItem}>
-            <a href="#home">Home</a>
-          </li>
-          <li className={styles.listItem}>
             <a href="#profile">Perfil</a>
           </li>
           <li className={styles.listItem}>
@@ -23,6 +20,9 @@ function Header() {
           </li>
           <li className={styles.listItem}>
             <a href="#sugestions">Sugestões</a>
+          </li>
+          <li className={styles.listItem}>
+            <a href="#feed">Feed</a>
           </li>
         </ul>
       </nav>

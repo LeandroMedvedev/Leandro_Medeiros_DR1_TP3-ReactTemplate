@@ -4,7 +4,7 @@ import { SUGESTOES } from '../../../../constants';
 
 function Sugestoes() {
   return (
-    <section className={styles.conteiner}>
+    <section id="sugestions" className={styles.conteiner}>
       <h2>Sugestões de Amizade</h2>
       {SUGESTOES.map((sugestao, index) => (
         <SugestaoItem

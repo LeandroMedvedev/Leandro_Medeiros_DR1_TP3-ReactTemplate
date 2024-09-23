@@ -4,7 +4,7 @@ import styles from './style.module.css';
 
 function Feed() {
   return (
-    <div className={styles.conteiner}>
+    <div id="feed" className={styles.conteiner}>
       {POSTAGENS.map((postagem, indice) => (
         <PostagemItem
           key={indice}

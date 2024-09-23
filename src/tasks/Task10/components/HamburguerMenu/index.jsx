@@ -55,11 +55,6 @@ function HamburguerMenu() {
       >
         <ul>
           <li>
-            <a href="#home" onClick={() => setIsOpen(false)}>
-              Home
-            </a>
-          </li>
-          <li>
             <a href="#profile" onClick={() => setIsOpen(false)}>
               Perfil
             </a>
@@ -72,6 +67,11 @@ function HamburguerMenu() {
           <li>
             <a href="#sugestions" onClick={() => setIsOpen(false)}>
               Sugestões
+            </a>
+          </li>
+          <li>
+            <a href="#feed" onClick={() => setIsOpen(false)}>
+              Feed
             </a>
           </li>
         </ul>
