@@ -1,0 +1,42 @@
+.videosRelacionados {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: #ebeaea;
+  font-family: var(--roboto);
+}
+
+.subtitulo {
+  margin: 5px 0px 15px;
+}
+
+.videosRelacionados .lista {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+}
+
+.paragraph {
+  margin: 5px 0;
+  font-size: 0.9rem;
+  text-align: center;
+  color: #0f0f0f;
+}
+
+.videoRelacionado {
+  width: 100%;
+  height: auto;
+  max-width: 350px;
+  border: none;
+  pointer-events: none;
+}
+
+@media (prefers-color-scheme: dark) {
+  .videosRelacionados,
+  .subtitulo,
+  .paragraph {
+    background-color: var(--midnight-blue);
+    color: var(--white);
+  }
+}

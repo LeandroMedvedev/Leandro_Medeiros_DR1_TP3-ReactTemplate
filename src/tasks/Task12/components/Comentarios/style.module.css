@@ -1,0 +1,34 @@
+.comentarios {
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: var(--alegreya);
+}
+
+.subtitulo {
+  margin: 15px 0;
+}
+
+.comentarios .lista {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: flex-start;
+  list-style-type: none;
+  gap: 15px;
+}
+
+.comentario {
+  text-align: justify;
+  text-indent: 10px;
+  color: var(--black-russian);
+}
+
+@media (prefers-color-scheme: dark) {
+  .comentarios .subtitulo,
+  .comnentarios .paragraph,
+  .comentario {
+    background-color: var(--ebony);
+    color: var(--white);
+  }
+}

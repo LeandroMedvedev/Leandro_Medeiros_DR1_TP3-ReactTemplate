@@ -1,0 +1,32 @@
+.propaganda {
+  padding: 10px;
+  margin-bottom: 20px;
+  background-color: var(--white);
+}
+
+.imagemPropaganda {
+  width: 300px;
+  display: block;
+  margin: 0px auto;
+}
+
+.subtitulo {
+  margin: 0 0 10px;
+  font-family: var(--roboto);
+}
+
+@media (min-width: 768px) {
+  .propaganda {
+    position: relative;
+    padding: 20px;
+    background-color: var(--white);
+    margin-bottom: 20px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .propaganda {
+    background-color: var(--ebony);
+    color: var(--white);
+  }
+}

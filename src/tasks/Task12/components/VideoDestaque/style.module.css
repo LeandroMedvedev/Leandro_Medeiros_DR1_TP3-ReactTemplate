@@ -1,0 +1,83 @@
+.videoDestaque {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.videoPrincipal {
+  width: 90%;
+  max-width: 740px;
+  min-height: 200px;
+  border: none;
+  pointer-events: none;
+}
+
+.title,
+.autor {
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  color: #0f0f0f;
+}
+
+.title {
+  padding: 5px;
+  font-size: 1.2rem;
+}
+
+.autorConteiner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.autorConteiner > img {
+  width: 40px;
+}
+
+.autorConteiner > .autor {
+  font-size: 0.9rem;
+}
+
+.menuIcones > img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.descricao > p {
+  max-width: 800px;
+  padding: 15px;
+  font-size: 1rem;
+  font-family: Alegreya, serif;
+  text-align: justify;
+  text-indent: 20px;
+  line-height: 1.3;
+  color: #03031b;
+}
+
+@media (min-width: 425px) {
+  .videoPrincipal {
+    min-height: 280px;
+  }
+}
+
+@media (min-width: 768px) {
+  .videoPrincipal {
+    min-height: 400px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .descricao > p,
+  .video-destaque,
+  .title,
+  .autor {
+    background-color: #282c34;
+    color: #fff;
+  }
+
+  .menuIcones > img {
+    fill: var(--white);
+  }
+}
