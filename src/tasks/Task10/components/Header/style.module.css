@@ -17,6 +17,7 @@
 
 .logoIcon svg {
   width: 60px;
+  fill: #1c2f4c;
 }
 
 .listItem > a {

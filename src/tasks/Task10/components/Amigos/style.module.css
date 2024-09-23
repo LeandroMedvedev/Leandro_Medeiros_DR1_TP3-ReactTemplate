@@ -10,3 +10,9 @@
     text-indent: 30px;
   }
 }
+
+@media (prefers-color-scheme: dark) {
+  .conteiner h2 {
+    color: var(--midnight-blue);
+  }
+}

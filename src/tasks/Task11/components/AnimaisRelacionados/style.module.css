@@ -45,6 +45,6 @@
   .animaisRelacionados > h2,
   .valor,
   .nome {
-    color: #fff;
+    color: var(--white);
   }
 }

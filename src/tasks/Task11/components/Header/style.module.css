@@ -53,7 +53,7 @@
 @media (prefers-color-scheme: dark) {
   .companyName,
   .link {
-    background-color: #282c34;
-    color: #fff;
+    background-color: var(--ebony);
+    color: var(--white);
   }
 }
