@@ -1,0 +1,45 @@
+.layout {
+  display: grid;
+  grid-template-rows: 15vh auto auto; /* cabeçalho, main, feed */
+  gap: 20px;
+  padding: 10px;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.conteudoPrincipal {
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  gap: 20px;
+}
+
+.feedPostagens {
+  padding: 20px;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  gap: 10px;
+  border-radius: 8px;
+  height: fit-content;
+}
+
+@media (min-width: 768px) {
+  .layout {
+    grid-template-rows: 15vh auto;
+    grid-template-columns: 64% 34%; /* Principal (64%) e feed (34%) */
+    grid-template-areas:
+      'header header'
+      'conteudo feed';
+  }
+
+  .conteudoPrincipal {
+    grid-column: 1 / 2; /* Coluna da esquerda */
+    grid-area: conteudo;
+  }
+
+  .feedPostagens {
+    grid-column: 2 / 3; /* Coluna da direita */
+    grid-area: feed;
+  }
+}

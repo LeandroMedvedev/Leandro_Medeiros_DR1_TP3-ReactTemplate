@@ -1,0 +1,32 @@
+.conteiner {
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  flex-flow: column wrap;
+  gap: 20px;
+}
+
+.identificacao {
+  min-height: 20vh;
+  display: flex;
+  justify-content: space-around;
+}
+
+.identificacao > div {
+  margin: auto;
+}
+
+.fotoPerfil {
+  width: 140px;
+  margin-right: 8px;
+  filter: grayscale(90%);
+}
+.fotoPerfil:hover {
+  transform: scaleX(-1);
+}
+
+@media (min-width: 425px) {
+  .fotoPerfil {
+    width: 200px;
+  }
+}
