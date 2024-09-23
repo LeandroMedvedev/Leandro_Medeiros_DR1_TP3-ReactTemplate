@@ -1,0 +1,50 @@
+.animaisRelacionados {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.animaisRelacionados > h2 {
+  font-size: 1.5rem;
+}
+
+.animaisLista {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.animalRelacionado {
+  margin: 10px;
+  flex: 1 1 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.animalRelacionado img {
+  width: 100%;
+  min-width: 244px;
+  max-width: 308px;
+  height: 345px;
+}
+
+.animalRelacionado > .nome {
+  font-size: 1.1rem;
+  font-weight: 500;
+}
+
+.animalRelacionado > .valor {
+  font-size: 1.3rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .animaisRelacionados {
+    background-color: #383d49;
+  }
+
+  .animaisRelacionados > h2,
+  .valor,
+  .nome {
+    color: #fff;
+  }
+}

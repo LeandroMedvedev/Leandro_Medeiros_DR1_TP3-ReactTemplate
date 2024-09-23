@@ -1,0 +1,85 @@
+.animalDetalhes {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.animalImagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.imagemPrincipal {
+  width: 62%;
+  min-width: 260px;
+  max-width: 360px;
+  height: auto;
+}
+
+.outrasImagens {
+  margin-top: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.outrasImagens img {
+  width: 85px;
+}
+
+.animalInfo {
+  margin-top: 20px;
+}
+
+.animalInfo h1 {
+  font-size: 24px;
+}
+
+.valor {
+  font-size: 2.2rem;
+  color: #03031b;
+  margin-top: 10px;
+}
+
+.descricao,
+.especificacoes > li {
+  font-size: 1.1rem;
+  text-align: justify;
+}
+
+.descricao {
+  margin-top: 15px;
+  text-indent: 20px;
+}
+
+.especificacoes {
+  margin-top: 20px;
+  list-style-type: none;
+  padding-left: 20px;
+}
+
+@media (min-width: 768px) {
+  .animalDetalhes {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .animalImagens,
+  .animalInfo {
+    flex: 1 1 48%;
+    padding: 8px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .animalInfo > h1,
+  .descricao,
+  .especificacoes > li {
+    background-color: #282c34;
+    color: #fff;
+  }
+
+  .valor {
+    color: #fff;
+  }
+}

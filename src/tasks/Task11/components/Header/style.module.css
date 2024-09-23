@@ -1,0 +1,59 @@
+.cabecalho {
+  height: 15vh;
+  margin: 0px 20px 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid var(--shuttle-grey);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.companyName {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--black-russian);
+}
+
+.menuHamburguer {
+  display: block;
+  font-size: 2.2rem;
+  cursor: pointer;
+}
+
+.menu ul {
+  display: none;
+}
+
+.itemLista {
+  margin-right: 20px;
+}
+
+.link {
+  font-size: 1.1rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--black-russian);
+}
+
+.link:hover {
+  color: var(--biloba-flower);
+}
+
+@media (min-width: 768px) {
+  .menu ul {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menuHamburguer {
+    display: none;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  .companyName,
+  .link {
+    background-color: #282c34;
+    color: #fff;
+  }
+}
